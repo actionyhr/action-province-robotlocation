@@ -26,9 +26,6 @@ FILE(GLOB SOURCE_LIST "${CMAKE_SOURCE_DIR}/src/*.cpp")
 add_executable(${PROJ_NAME} ${SOURCE_LIST} ${HEADER_LIST})
 include_directories(${SERIAL_DIR})
 
-target_link_libraries(${PROJ_NAME}
-	${CMAKE_CURRENT_SOURCE_DIR}/lib/libserial.so
-)
 #　OpenCV
 find_package(OpenCV 3.4 REQUIRED)
 
