@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yhr/code/Robocon/src/act_d435.cpp" "/home/yhr/code/Robocon/build/CMakeFiles/Test.dir/src/act_d435.cpp.o"
-  "/home/yhr/code/Robocon/src/main.cpp" "/home/yhr/code/Robocon/build/CMakeFiles/Test.dir/src/main.cpp.o"
-  "/home/yhr/code/Robocon/src/own_serial.cpp" "/home/yhr/code/Robocon/build/CMakeFiles/Test.dir/src/own_serial.cpp.o"
-  "/home/yhr/code/Robocon/src/robot_locator.cpp" "/home/yhr/code/Robocon/build/CMakeFiles/Test.dir/src/robot_locator.cpp.o"
+  "/home/yhr/github/action-province-robotlocation/src/act_d435.cpp" "/home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir/src/act_d435.cpp.o"
+  "/home/yhr/github/action-province-robotlocation/src/main.cpp" "/home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir/src/main.cpp.o"
+  "/home/yhr/github/action-province-robotlocation/src/own_serial.cpp" "/home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir/src/own_serial.cpp.o"
+  "/home/yhr/github/action-province-robotlocation/src/robot_locator.cpp" "/home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir/src/robot_locator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

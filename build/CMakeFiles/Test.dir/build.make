@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yhr/code/Robocon
+CMAKE_SOURCE_DIR = /home/yhr/github/action-province-robotlocation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yhr/code/Robocon/build
+CMAKE_BINARY_DIR = /home/yhr/github/action-province-robotlocation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Test.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Test.dir/flags.make
 
 CMakeFiles/Test.dir/src/robot_locator.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/robot_locator.cpp.o: ../src/robot_locator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/code/Robocon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/src/robot_locator.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/robot_locator.cpp.o -c /home/yhr/code/Robocon/src/robot_locator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/github/action-province-robotlocation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/src/robot_locator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/robot_locator.cpp.o -c /home/yhr/github/action-province-robotlocation/src/robot_locator.cpp
 
 CMakeFiles/Test.dir/src/robot_locator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/robot_locator.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/code/Robocon/src/robot_locator.cpp > CMakeFiles/Test.dir/src/robot_locator.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/github/action-province-robotlocation/src/robot_locator.cpp > CMakeFiles/Test.dir/src/robot_locator.cpp.i
 
 CMakeFiles/Test.dir/src/robot_locator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/robot_locator.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/code/Robocon/src/robot_locator.cpp -o CMakeFiles/Test.dir/src/robot_locator.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/github/action-province-robotlocation/src/robot_locator.cpp -o CMakeFiles/Test.dir/src/robot_locator.cpp.s
 
 CMakeFiles/Test.dir/src/robot_locator.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Test.dir/src/robot_locator.cpp.o.provides.build: CMakeFiles/Test.dir/
 
 CMakeFiles/Test.dir/src/own_serial.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/own_serial.cpp.o: ../src/own_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/code/Robocon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/src/own_serial.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/own_serial.cpp.o -c /home/yhr/code/Robocon/src/own_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/github/action-province-robotlocation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/src/own_serial.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/own_serial.cpp.o -c /home/yhr/github/action-province-robotlocation/src/own_serial.cpp
 
 CMakeFiles/Test.dir/src/own_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/own_serial.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/code/Robocon/src/own_serial.cpp > CMakeFiles/Test.dir/src/own_serial.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/github/action-province-robotlocation/src/own_serial.cpp > CMakeFiles/Test.dir/src/own_serial.cpp.i
 
 CMakeFiles/Test.dir/src/own_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/own_serial.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/code/Robocon/src/own_serial.cpp -o CMakeFiles/Test.dir/src/own_serial.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/github/action-province-robotlocation/src/own_serial.cpp -o CMakeFiles/Test.dir/src/own_serial.cpp.s
 
 CMakeFiles/Test.dir/src/own_serial.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Test.dir/src/own_serial.cpp.o.provides.build: CMakeFiles/Test.dir/src
 
 CMakeFiles/Test.dir/src/main.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/code/Robocon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/main.cpp.o -c /home/yhr/code/Robocon/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/github/action-province-robotlocation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/main.cpp.o -c /home/yhr/github/action-province-robotlocation/src/main.cpp
 
 CMakeFiles/Test.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/code/Robocon/src/main.cpp > CMakeFiles/Test.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/github/action-province-robotlocation/src/main.cpp > CMakeFiles/Test.dir/src/main.cpp.i
 
 CMakeFiles/Test.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/code/Robocon/src/main.cpp -o CMakeFiles/Test.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/github/action-province-robotlocation/src/main.cpp -o CMakeFiles/Test.dir/src/main.cpp.s
 
 CMakeFiles/Test.dir/src/main.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Test.dir/src/main.cpp.o.provides.build: CMakeFiles/Test.dir/src/main.
 
 CMakeFiles/Test.dir/src/act_d435.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/act_d435.cpp.o: ../src/act_d435.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/code/Robocon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/src/act_d435.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/act_d435.cpp.o -c /home/yhr/code/Robocon/src/act_d435.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yhr/github/action-province-robotlocation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/src/act_d435.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/act_d435.cpp.o -c /home/yhr/github/action-province-robotlocation/src/act_d435.cpp
 
 CMakeFiles/Test.dir/src/act_d435.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/act_d435.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/code/Robocon/src/act_d435.cpp > CMakeFiles/Test.dir/src/act_d435.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yhr/github/action-province-robotlocation/src/act_d435.cpp > CMakeFiles/Test.dir/src/act_d435.cpp.i
 
 CMakeFiles/Test.dir/src/act_d435.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/act_d435.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/code/Robocon/src/act_d435.cpp -o CMakeFiles/Test.dir/src/act_d435.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yhr/github/action-province-robotlocation/src/act_d435.cpp -o CMakeFiles/Test.dir/src/act_d435.cpp.s
 
 CMakeFiles/Test.dir/src/act_d435.cpp.o.requires:
 
@@ -168,7 +168,6 @@ Test_EXTERNAL_OBJECTS =
 ../bin/Test: CMakeFiles/Test.dir/src/main.cpp.o
 ../bin/Test: CMakeFiles/Test.dir/src/act_d435.cpp.o
 ../bin/Test: CMakeFiles/Test.dir/build.make
-../bin/Test: ../lib/libserial.so
 ../bin/Test: /usr/local/lib/libopencv_shape.so.3.4.5
 ../bin/Test: /usr/local/lib/libopencv_ml.so.3.4.5
 ../bin/Test: /usr/local/lib/libopencv_superres.so.3.4.5
@@ -189,7 +188,7 @@ Test_EXTERNAL_OBJECTS =
 ../bin/Test: /usr/local/lib/libopencv_imgproc.so.3.4.5
 ../bin/Test: /usr/local/lib/libopencv_core.so.3.4.5
 ../bin/Test: CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yhr/code/Robocon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yhr/github/action-province-robotlocation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -209,6 +208,6 @@ CMakeFiles/Test.dir/clean:
 .PHONY : CMakeFiles/Test.dir/clean
 
 CMakeFiles/Test.dir/depend:
-	cd /home/yhr/code/Robocon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yhr/code/Robocon /home/yhr/code/Robocon /home/yhr/code/Robocon/build /home/yhr/code/Robocon/build /home/yhr/code/Robocon/build/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yhr/github/action-province-robotlocation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yhr/github/action-province-robotlocation /home/yhr/github/action-province-robotlocation /home/yhr/github/action-province-robotlocation/build /home/yhr/github/action-province-robotlocation/build /home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Test.dir/depend
 

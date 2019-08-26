@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yhr/code/Robocon/include -isystem /usr/local/include -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/home/yhr/github/action-province-robotlocation/include -isystem /usr/local/include -isystem /usr/local/include/opencv 
 
