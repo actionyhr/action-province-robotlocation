@@ -1,3 +1,3 @@
-/home/yhr/github/action-province-robotlocation/build/CMakeFiles/edit_cache.dir
-/home/yhr/github/action-province-robotlocation/build/CMakeFiles/rebuild_cache.dir
-/home/yhr/github/action-province-robotlocation/build/CMakeFiles/Test.dir
+/home/yhr/code/Robocon/build/CMakeFiles/edit_cache.dir
+/home/yhr/code/Robocon/build/CMakeFiles/rebuild_cache.dir
+/home/yhr/code/Robocon/build/CMakeFiles/Test.dir

@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
         }
 #ifdef IFSERIAL    
         if(Locator.status == DISTANCE_CALCULATE)
-            ownSerial.writeData(Locator.leftDistance,Locator.rightDistance,Locator.cornerAngle,Locator.status);
+            ownSerial.writeData(Locator.leftDistance,Locator.rightDistance,Locator.cornerAngle,Locator.lineStatus);
 #endif
         Locator.showImage();
         tk.stop();

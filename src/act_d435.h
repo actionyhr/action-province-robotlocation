@@ -12,13 +12,6 @@
 #include <librealsense2/hpp/rs_sensor.hpp>
 #include <librealsense2/rs_advanced_mode.hpp>
 #include <librealsense2/rs_advanced_mode.h>
-#include <pcl-1.8/pcl/point_types.h>
-#include <pcl-1.8/pcl/pcl_base.h>
-#include <pcl-1.8/pcl/visualization/cloud_viewer.h>
-#include <pcl-1.8/pcl/sample_consensus/method_types.h>
-#include <pcl-1.8/pcl/sample_consensus/model_types.h>
-#include <pcl-1.8/pcl/segmentation/sac_segmentation.h>
-#include <pcl-1.8/pcl/filters/statistical_outlier_removal.h>
 #define IFCAMERA
 #define IMAGE_WIDTH 	640
 #define IMAGE_HEIGHT 	480
@@ -27,9 +20,6 @@
 #define GESTURE_RECOGNITION 	0
 #define DISTANCE_CALCULATE 		1
 
-typedef pcl::PointXYZRGB pointType;
-typedef pcl::PointCloud<pointType> pointCloud;
-typedef pointCloud::Ptr 	pPointCloud;
 
 //-- ROI of an object
 typedef struct

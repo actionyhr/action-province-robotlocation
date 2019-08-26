@@ -6,16 +6,12 @@
 //left is zero, right is one 
 
 #define STD_ROI {-0.6f, 0.6f, 0.0f, 2.5f}
-
-
-#include <Eigen/Dense>
 #include <cmath>
 #include "act_d435.h"
 
 #define DISTANCE(X1,Y1,X2,Y2) (sqrt(pow(X1-X2,2)+pow(Y1-Y2,2)))
 #define DISTANCELINE(X,Y,A,B) (fabs(A*X+B-Y)/sqrt((pow(A,2)+1)))
 
-using namespace Eigen;
 enum BallColor{black, white, pink};
 typedef struct
 {	
@@ -66,6 +62,7 @@ public:
 	float cornerAngle = 0.0;
 	float recoStatus = 0;
 	unsigned int status;
+	unsigned int lineStatus;
 	float distance = 0.0;
 	uint16_t* depthData;
 	int pointStatus = 1;//0为四角 1为识别中台
@@ -73,7 +70,6 @@ public:
 	
 private:
 	ActD435*        thisD435;
-	pcl::visualization::PCLVisualizer::Ptr dstViewer;
 	std::vector<BallCluster> ballClusterVec;
 	uint16_t* m_data;
 	//camera parameters
@@ -82,7 +78,6 @@ private:
 	rs2_extrinsics depth2color_extrin;
 	rs2_extrinsics color2depth_extrin;
 	
-	pPointCloud	bounPoint;
 	//PCL modules
 	cv::Mat depthImage;
 	cv::Mat afterLine;

@@ -26,6 +26,9 @@ FILE(GLOB SOURCE_LIST "${CMAKE_SOURCE_DIR}/src/*.cpp")
 add_executable(${PROJ_NAME} ${SOURCE_LIST} ${HEADER_LIST})
 include_directories(${SERIAL_DIR})
 
+target_link_libraries(${PROJ_NAME}
+	${CMAKE_CURRENT_SOURCE_DIR}/lib/libserial.so
+)
 #　OpenCV
 find_package(OpenCV 3.4 REQUIRED)
 
@@ -34,15 +37,6 @@ if(OpenCV_FOUND)
     target_link_libraries(${PROJ_NAME} ${OpenCV_LIBS})
 endif()
 
-# PCL
-find_package(PCL 1.8.1 REQUIRED)
- 
-if(PCL_FOUND)
-    include_directories(${PCL_INCLUDE_DIRS})
-    add_definitions(${PCL_DEFINITIONS})
-    link_directories(${PCL_LIBRARY_DIRS})
-    target_link_libraries(${PROJ_NAME} ${PCL_LIBRARIES})
-endif()
 
 # realsense
 find_package(realsense2 REQUIRED)

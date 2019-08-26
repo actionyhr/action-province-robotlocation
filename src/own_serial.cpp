@@ -73,16 +73,16 @@ int own_serial::writeData(float distanceLeft,float distanceRight,float angel,int
     switch (status)
     {
     case 0:
-        buffData[2] = '0';
+        buffData[2] = 0;
         break;
     case 1:
-        buffData[2] = '1';
+        buffData[2] = 1;
         break;
     case 2:
-        buffData[2] = '2';
+        buffData[2] = 2;
         break;
     case 3:
-        buffData[2] = '3';
+        buffData[2] = 3;
         break;
     default:
         break;

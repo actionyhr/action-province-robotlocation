@@ -10,9 +10,7 @@
   */
   #include "robot_locator.h"
   std::ofstream outfile("test.txt");
-  RobotLocator::RobotLocator():
-  bounPoint(new pointCloud),
-  dstViewer(new pcl::visualization::PCLVisualizer("pointShpow"))
+  RobotLocator::RobotLocator()
   {
   srcImage = cv::Mat::zeros(cv::Size(IMAGE_WIDTH, IMAGE_HEIGHT), CV_8UC1);
   dstImage = cv::Mat::zeros(cv::Size(IMAGE_WIDTH, IMAGE_HEIGHT), CV_8UC1);
@@ -37,12 +35,6 @@
 
 void RobotLocator::init(ActD435& d435)
 {
-
-
-    dstViewer->setBackgroundColor(0.259,0.522,0.957);
-    dstViewer->addPointCloud<pointType>(bounPoint,"bound");
-    dstViewer->addCoordinateSystem(0.2, "view point");
-    dstViewer->initCameraParameters();
 
     cout << "Initializing locator..." << endl;
 
@@ -177,8 +169,6 @@ void RobotLocator::findBoundary(void)
     {
         return;
     }
-    dstViewer->updatePointCloud(bounPoint,"bound");
-    dstViewer->spinOnce(1);
     tk.stop();
 
 }
@@ -189,16 +179,13 @@ void RobotLocator::threeDDoundary(void)
     float pixel[2];
     cv::Point2d xzPoint;
     vector<HoughLine> linePar;
-    int status=0;
-    bounPoint->points.clear();
+    lineStatus=0;
     for (size_t i = 0; i < firstVector.size(); i++)
     {
         
         vector<cv::Point2f> boundaryPoint;
         HoughLine twoLines;
         cv::Vec4f fitLine;
-        pPointCloud bounCloud(new pointCloud);
-        pointType pclpoint;
         for (size_t j = 0; j < firstVector[i].size(); j++)
         {
             pixel[0] = firstVector[i][j].x;
@@ -238,7 +225,7 @@ void RobotLocator::threeDDoundary(void)
         cornerAngle = angle;
         leftDistance = linePar[1].distance;
         rightDistance = linePar[0].distance;
-        status=3;
+        lineStatus=3;
     }
     else if(linePar.size()==1)
     {
@@ -249,16 +236,16 @@ void RobotLocator::threeDDoundary(void)
         if(linePar[0].lineSlop < 0)
         {
             leftDistance = linePar[0].distance;
-            status=2;
+            lineStatus=2;
         }   
         else
         {
             rightDistance = linePar[0].distance;
-            status=1;
+            lineStatus=1;
         }
         
     }
-    cout<<" angle: "<<angle<<"status : "<<status;
+    cout<<" angle: "<<angle<<"status : "<<lineStatus;
 }
 void RobotLocator::getPointFromPixel(float colorPixel[2],float point[3])
 {
